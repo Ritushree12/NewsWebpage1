@@ -1,0 +1,93 @@
+body {
+  margin: 0px;
+  font-family: Helvetica, sans-serif;
+}
+img {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: rgb(34, 11, 183);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.line {
+  padding: 0px;
+  margin: 0px;
+}
+.continueReading {
+  display: flex;
+  border-color: rgb(252, 144, 12);
+  color: white;
+  background-color: rgb(252, 144, 12);
+  margin-left: 10px;
+  padding: 10px;
+}
+footer {
+  display: flex;
+  color: white;
+  background-color: rgb(34, 11, 183);
+  clear: both;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+}
+td p {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: column;
+}
+#email {
+  padding: 5px;
+}
+
+#subscribe {
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+span {
+  display: inline;
+  padding: 10px;
+  white-space: nowrap;
+}
+select {
+  border-color: black;
+  box-shadow: rgba(0, 0, 0, 0.922);
+  width: 245px;
+  height: 21.33px;
+}
+.side-panel {
+  float: right;
+  padding-right: 70px;
+}
+.news-content {
+  display: flex;
+  width: 70%;
+  float: left;
+  padding-left: 20px;
+  flex-direction: column;
+}
+table {
+  border-spacing: 0px;
+  display: block;
+  margin-bottom: 70px;
+}
+h2 {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+.date {
+  font-family: Calibri, sans-serif;
+  font-size: small;
+  color: #36454f;
+}
+div {
+  display: flexbox;
+}

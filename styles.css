@@ -10,7 +10,9 @@ header {
   background: rgb(34, 11, 183);
   color: white;
   text-align: center;
-  padding: 20px;
+  align-items: center;
+  padding: 5px;
+  margin: 0;
 }
 .line {
   padding: 0px;
@@ -42,14 +44,10 @@ td p {
   padding: 10px;
   flex-direction: column;
 }
-#email {
-  padding: 5px;
-}
 
 #subscribe {
   background-color: black;
   color: white;
-  padding: 5px;
 }
 span {
   display: inline;

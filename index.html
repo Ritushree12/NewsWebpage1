@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="styles.css" />
   <title>Newsfeed</title>
 </head>
+
 <body>
-  <header class="title">
-    <h1><b>NEWSFEED</b></h1>
-    <br />
+  <header>
+    <h1 style="margin: 0;"><b>NEWSFEED</b></h1>
+
     <i>Yet another newsfeed</i>
   </header>
   <div class="side-panel">
     <label for="category">
-      <h3><b>Select a category </b></h3>
+      <h3>Select a category</h3>
     </label>
-  
+
     <select name="category" id="category">
       <option value="politics">All</option>
       <option value="politics">Politics</option>
@@ -28,7 +29,8 @@
     <label for="subscribe"><b>
         <h3>Subscribe</h3>
       </b></label>
-    <input type="text" id="email" name="subscribe" placeholder="Email Address" /><button id="subscribe">Subscribe</button>
+    <input type="text" id="email" name="subscribe" placeholder="Email Address" /><button
+      id="subscribe">Subscribe</button>
   </div>
   <div class="news-content">
     <table>
@@ -38,8 +40,9 @@
         </td>
         <td class="newsText">
           <h2>News 1</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category:</i><b>Category 1</b></span>
-          <p>
+          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
+          <p class="truncate-text">
+           
             Heavy rainfall continued to lash Mumbai for the second consecutive
             day, leading to severe waterlogging in several parts of the city.
             Local train services were partially affected, and road traffic
@@ -48,6 +51,7 @@
             surrounding areas, warning of intense rainfall over the next 24
             hours. "We urge residents to avoid unnecessary travel and stay
             indoors," said a civic official.
+            
           </p>
           <br />
           <button class="continueReading">Continue Reading</button>
@@ -70,8 +74,8 @@
         </td>
         <td class="newsText">
           <h2>News 2</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category:</i><b>Category 1</b></span>
-          <p>
+          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
+        <p class="truncate-text">
             The Indian Space Research Organisation (ISRO) has successfully
             launched Chandrayaan-4, India’s fourth lunar mission, aimed at
             conducting advanced research on the Moon's south pole region. The
@@ -99,8 +103,8 @@
         </td>
         <td class="newsText">
           <h2>News 3</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category:</i><b>Category 1</b></span>
-          <p>
+          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
+          <p class="truncate-text">
             In a major push towards digital education, the Government of India
             today launched the National AI Literacy Program, aimed at
             equipping school and college students with foundational knowledge
@@ -116,4 +120,5 @@
   </div>
   <footer>&copy Newsfeed</footer>
 </body>
+
 </html>

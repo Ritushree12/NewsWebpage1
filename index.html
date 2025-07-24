@@ -10,15 +10,14 @@
 
 <body>
   <header>
-    <h1 style="margin: 0;"><b>NEWSFEED</b></h1>
-
+    <h1 style="margin: 0"><b>NEWSFEED</b></h1>
     <i>Yet another newsfeed</i>
   </header>
+
   <div class="side-panel">
     <label for="category">
       <h3>Select a category</h3>
     </label>
-
     <select name="category" id="category">
       <option value="politics">All</option>
       <option value="politics">Politics</option>
@@ -26,99 +25,80 @@
       <option value="state">State</option>
       <option value="nation">Nation</option>
     </select>
-    <label for="subscribe"><b>
-        <h3>Subscribe</h3>
-      </b></label>
-    <input type="text" id="email" name="subscribe" placeholder="Email Address" /><button
-      id="subscribe">Subscribe</button>
-  </div>
-  <div class="news-content">
-    <table>
-      <tr>
-        <td>
-          <img src="Mumbai.jpeg" alt="Mumbai" width="150" height="150" />
-        </td>
-        <td class="newsText">
-          <h2>News 1</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
-          <p class="truncate-text">
-           
-            Heavy rainfall continued to lash Mumbai for the second consecutive
-            day, leading to severe waterlogging in several parts of the city.
-            Local train services were partially affected, and road traffic
-            came to a standstill during peak hours.The India Meteorological
-            Department (IMD) has issued an orange alert for Mumbai and
-            surrounding areas, warning of intense rainfall over the next 24
-            hours. "We urge residents to avoid unnecessary travel and stay
-            indoors," said a civic official.
-            
-          </p>
-          <br />
-          <button class="continueReading">Continue Reading</button>
-        </td>
-      </tr>
-      <tr>
-        <td class="line">
-          <hr />
-        </td>
-        <td class="line">
-          <hr />
-        </td>
-        <td class="line">
-          <hr />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="isro.png" alt="ISRO" width="150" height="150" />
-        </td>
-        <td class="newsText">
-          <h2>News 2</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
-        <p class="truncate-text">
-            The Indian Space Research Organisation (ISRO) has successfully
-            launched Chandrayaan-4, India’s fourth lunar mission, aimed at
-            conducting advanced research on the Moon's south pole region. The
-            launch took place at 9:15 AM IST from the Satish Dhawan Space
-            Centre in Sriharikota.
-          </p>
-          <br />
-          <button class="continueReading">Continue Reading</button>
-        </td>
-      </tr>
-      <tr>
-        <td class="line">
-          <hr />
-        </td>
-        <td class="line">
-          <hr />
-        </td>
-        <td class="line">
-          <hr />
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <img src="NITI-Aayog.png" alt="Nitiayog" width="150" height="150" />
-        </td>
-        <td class="newsText">
-          <h2>News 3</h2>
-          <span class="date">Posted on <b>21<sup>st</sup>July, 2025.</b><i> Category: </i><b>Category 1</b></span>
-          <p class="truncate-text">
-            In a major push towards digital education, the Government of India
-            today launched the National AI Literacy Program, aimed at
-            equipping school and college students with foundational knowledge
-            of Artificial Intelligence. The initiative was unveiled by the
-            Ministry of Education in collaboration with NITI Aayog and leading
-            tech companies.
-          </p>
-          <br />
-          <button class="continueReading">Continue Reading</button>
-        </td>
-      </tr>
-    </table>
-  </div>
-  <footer>&copy Newsfeed</footer>
-</body>
 
+    <label for="subscribe">
+      <h3>Subscribe</h3>
+    </label>
+    <div class="email">
+    <input type="text"  name="subscribe" placeholder="Email Address"/><button id="subscribe">Subscribe</button>
+  
+  </div>
+  </div>
+
+<div class="outer-container">
+  <div class="news-content">
+    <div><img src="Mumbai.jpeg" alt="Mumbai" width="150" height="150" /></div>
+    <div class="news">
+      <h2>News 1</h2><span class="date">Posted on <b>21<sup>st</sup> July, 2025.</b>
+      <i> Category: </i> <b>Category 1</b>
+    </span>
+    <p class="ellipsis">
+      Heavy rainfall continued to lash Mumbai for the second consecutive day,
+      leading to severe waterlogging in several parts of the city. Local train
+      services were partially affected, and road traffic came to a standstill
+      during peak hours. The India Meteorological Department (IMD) has issued
+      an orange alert for Mumbai and surrounding areas, warning of intense
+      rainfall over the next 24 hours. "We urge residents to avoid unnecessary
+      travel and stay indoors," said a civic official.
+    </p>
+    <button class="continueReading">Continue Reading</button>
+  </div>
+  </div>
+  <hr class="hr">
+</div>
+
+<div class="outer-container">
+    <div class="news-content">
+      <div><img src="isro.png" alt="ISRO" width="150" height="150" /></div>
+      <div class="news">
+        <h2>News 2</h2><span class="date">Posted on <b>21<sup>st</sup> July, 2025.</b>
+          <i> Category: </i> <b>Category 1</b>
+        </span>
+        <p class="ellipsis">
+          The Indian Space Research Organisation (ISRO) has successfully launched
+          Chandrayaan-4, India’s fourth lunar mission, aimed at conducting
+          advanced research on the Moon's south pole region. The launch took place
+          at 9:15 AM IST from the Satish Dhawan Space Centre in Sriharikota.
+        </p>
+        <button class="continueReading">Continue Reading</button>
+      </div>
+      
+    </div>
+<hr class="hr">
+
+</div>
+
+<div class="outer-container">
+
+    <div class="news-content">
+      <div><img src="NITI-Aayog.png" alt="Nitiayog" width="150" height="150" /></div>
+      <div class="news">
+        <h2>News 3</h2><span class="date">Posted on <b>21<sup>st</sup> July, 2025.</b>
+          <i> Category: </i> <b>Category 1</b>
+        </span>
+        <p class="ellipsis">
+          In a major push towards digital education, the Government of India today
+          launched the National AI Literacy Program, aimed at equipping school and
+          college students with foundational knowledge of Artificial Intelligence.
+          The initiative was unveiled by the Ministry of Education in
+          collaboration with NITI Aayog and leading tech companies.
+        </p>
+    
+        <button class="continueReading">Continue Reading</button>
+      </div>
+    </div>
+    </div>
+
+  <footer>&copy; Newsfeed</footer>
+</body>
 </html>

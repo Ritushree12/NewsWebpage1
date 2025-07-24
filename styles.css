@@ -19,12 +19,11 @@ header {
   margin: 0px;
 }
 .continueReading {
-  display: flex;
+  width: 150px;
+  height: 40px;
   border-color: rgb(252, 144, 12);
   color: white;
   background-color: rgb(252, 144, 12);
-  margin-left: 10px;
-  padding: 10px;
 }
 footer {
   display: flex;
@@ -38,20 +37,14 @@ footer {
   width: 100%;
   position: fixed;
 }
-td p {
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  flex-direction: column;
-}
 
 #subscribe {
+  font-style: bold;
   background-color: black;
   color: white;
 }
 span {
   display: inline;
-  padding: 10px;
   white-space: nowrap;
 }
 select {
@@ -64,28 +57,100 @@ select {
   float: right;
   padding-right: 70px;
 }
+.side-panel::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .news-content {
   display: flex;
   width: 70%;
-  float: left;
+  margin-top: 10px;
   padding-left: 20px;
-  flex-direction: column;
+  flex-direction: row;
+  margin-bottom: 60px;
 }
-table {
-  border-spacing: 0px;
-  display: block;
-  margin-bottom: 70px;
-}
-h2 {
-  display: flex;
-  padding: 10px;
-  flex-direction: column;
-}
+
 .date {
   font-family: Calibri, sans-serif;
   font-size: small;
   color: #36454f;
 }
-div {
-  display: flexbox;
+.news {
+  margin-left: 10px;
+}
+.hr {
+  border: 1px solid #585858;
+  margin: 0;
+}
+.outer-container {
+  width: 75%;
+  display: grid;
+}
+.ellipsis {
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.email {
+  display: flex;
+}
+
+/* to make this responsive*/
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .news-content {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
+    width: 100%;
+    padding-left: 0;
+    margin-bottom: 80px; /* Extra space above footer */
+  }
+
+  .news img {
+    margin-bottom: 10px;
+  }
+
+  .side-panel {
+    float: none;
+    padding: 0;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .email {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .ellipsis {
+    width: 90%;
+    white-space: normal; /* Allow multiline text */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* show only 4 lines */
+    -webkit-box-orient: vertical;
+  }
+
+  .continueReading {
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .outer-container {
+    width: 100%;
+  }
+
+  footer {
+    position: static;
+    height: auto;
+    padding: 10px 0;
+  }
 }
